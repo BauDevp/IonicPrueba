@@ -1,0 +1,17 @@
+.item1{
+   float:left;
+    
+}
+
+.item2{
+    float:right;  
+ }
+
+ ion-card{
+    height:150px;
+    flex-flow: column-reverse;
+ }
+
+ ion-card-title {
+    --color: #1a1a63;
+  }
