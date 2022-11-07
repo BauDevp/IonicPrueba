@@ -11,14 +11,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'registro',
-    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
-  },
-  {
-    path: 'login',
-    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
-  },
-  {
     path: 'cuenta',
     loadChildren: () => import('./pages/cuenta/cuenta.module').then( m => m.CuentaPageModule)
   },
@@ -33,10 +25,6 @@ const routes: Routes = [
   {
     path: 'tab',
     loadChildren: () => import('./pages/tab/tab.module').then( m => m.TabPageModule)
-  },
-  {
-    path: 'ajustes',
-    loadChildren: () => import('./pages/ajustes/ajustes.module').then( m => m.AjustesPageModule)
   },
   {
     path: 'soli-retiro',

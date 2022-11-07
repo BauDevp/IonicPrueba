@@ -17,14 +17,6 @@ const routes: Routes = [
         loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
       },
       {
-        path: 'registro',
-        loadChildren: () => import('../registro/registro.module').then( m => m.RegistroPageModule)
-      },
-      {
-        path: 'login',
-        loadChildren: () => import('../login/login.module').then( m => m.LoginPageModule)
-      },
-      {
         path: 'cuenta',
         loadChildren: () => import('../cuenta/cuenta.module').then( m => m.CuentaPageModule)
       },
@@ -35,10 +27,6 @@ const routes: Routes = [
       {
         path: 'aprobacion',
         loadChildren: () => import('../aprob-solic/aprob-solic.module').then( m => m.AprobSolicPageModule)
-      },
-      {
-        path: 'ajustes',
-        loadChildren: () => import('../ajustes/ajustes.module').then( m => m.AjustesPageModule)
       },
       {
         path: 'soli-retiro',

@@ -29,13 +29,13 @@
   </ion-card>
 
   <ion-card>
-    <form>
-      <ion-card-content>
+    <ion-card-content class="ion-padding">
+      <form (ngSubmit)="logForm()">
 
         <ion-item>
 
           <ion-label position="stacked">Ingrese la cantidad a retirar</ion-label>
-          <ion-input type="number" placeholder="Importe de retiro"></ion-input>
+          <ion-input type="number" name="amount"></ion-input>
 
         </ion-item>
 
@@ -43,9 +43,9 @@
 
           <ion-item>
             <ion-label position="stacked">Concepto de retiro</ion-label>
-            <ion-select interface="popover" placeholder="Selecciona el tipo de retiro">
-              <ion-select-option value="apples">Transferencia</ion-select-option>
-              <ion-select-option value="oranges">Retiro por préstamo</ion-select-option>
+            <ion-select type="string" interface="popover" placeholder="Selecciona el concepto de retiro" name='concepto'>
+              <ion-select-option value="Transferencia">Transferencia</ion-select-option>
+              <ion-select-option value="Prestamo">Retiro por préstamo</ion-select-option>
             </ion-select>
           </ion-item>
 
@@ -56,18 +56,17 @@
           <ion-item>
             <ion-label position="stacked">Tipo de retiro</ion-label>
             <ion-select interface="popover" placeholder="Selecciona el tipo de retiro">
-              <ion-select-option value="apples">Total</ion-select-option>
-              <ion-select-option value="oranges">Parcial</ion-select-option>
+              <ion-select-option value="Total">Total</ion-select-option>
+              <ion-select-option value="Parcial">Parcial</ion-select-option>
             </ion-select>
           </ion-item>
-
         </ion-list>
-
-        <ion-button class="button-1" expand="full" fill="solid" type="submit">
+        <ion-button expand="full" fill="solid" type="submit">
           Generar Solicitud
         </ion-button>
+
+       </form>
       </ion-card-content>
-    </form>
 
   </ion-card>
 
